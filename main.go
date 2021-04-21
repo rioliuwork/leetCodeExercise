@@ -3,7 +3,8 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	nums := []int{1, 2, 3, 4}
-	val := exercise.RunningSum(nums)
+	s := "lrloseumgh"
+	k := 6
+	val := exercise.ReverseLeftWords(s, k)
 	print(val)
 }
