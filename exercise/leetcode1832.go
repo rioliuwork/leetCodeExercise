@@ -48,7 +48,7 @@ func CheckIfPangram(sentence string) bool {
 3转换为2进制为11，即2位，所以24+2=26位，也就代表了26个字母； ^表示异或运算，1 ^ 1 = 0，也就是说如果res前26位都为1的话，res ^ 0x3ffffff 的值将为 0；
 故而返回true，否则返回false。
 */
-func CheckIfPangram1(sentence string) bool {
+func checkIfPangram1(sentence string) bool {
 	var res int32 = 0
 	for _, letter := range []rune(sentence) {
 		res |= 1 << (letter - 'a')
