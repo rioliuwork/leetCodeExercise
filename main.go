@@ -3,7 +3,7 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	str := "thequickbrownfoxjumpsoverthelazydog"
-	val := exercise.CheckIfPangram1(str)
+	nums := []int{1, 2, 3, 4}
+	val := exercise.RunningSum(nums)
 	print(val)
 }
