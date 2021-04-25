@@ -3,11 +3,7 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	accounts := [][]int{
-		{1, 5},
-		{7, 3},
-		{3, 5},
-	}
-	val := exercise.MaximumWealth(accounts)
+	accounts := []int{1, 1, 1, 1}
+	val := exercise.NumIdenticalPairs1(accounts)
 	print(val)
 }
