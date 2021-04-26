@@ -3,7 +3,8 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	accounts := []int{1, 1, 1, 1}
-	val := exercise.NumIdenticalPairs1(accounts)
+	candies := []int{1, 1, 1, 1}
+	extraCandies := 3
+	val := exercise.KidsWithCandies(candies, extraCandies)
 	print(val)
 }
