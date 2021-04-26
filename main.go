@@ -3,8 +3,7 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	candies := []int{1, 1, 1, 1}
-	extraCandies := 2
-	val := exercise.Shuffle(candies, extraCandies)
+	s := "8*((1*(5+6))*(8/6))"
+	val := exercise.MaxDepth(s)
 	print(val)
 }
