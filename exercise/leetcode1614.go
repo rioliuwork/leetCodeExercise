@@ -44,21 +44,15 @@ s 由数字 0-9 和字符 '+'、'-'、'*'、'/'、'('、')' 组成
 题目数据保证括号表达式 s 是 有效的括号表达式
 */
 func MaxDepth(s string) int {
-	var strs []rune
-	for _, str := range s {
-		if str == '(' || str == ')' {
-			strs = append(strs, str)
-		}
-	}
 	var max int
 	var tempMax int
-	for i := 0; i < len(strs); i++ {
-		if strs[i] == '(' {
+	for _, str := range s {
+		if str == '(' {
 			tempMax++
 			if tempMax > max {
 				max = tempMax
 			}
-		} else if strs[i] == ')' {
+		} else if str == ')' {
 			tempMax--
 		}
 	}
