@@ -3,7 +3,8 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	s := "8*((1*(5+6))*(8/6))"
-	val := exercise.MaxDepth(s)
+	points := [][]int{{1, 3}, {3, 3}, {5, 3}, {2, 2}}
+	queries := [][]int{{2, 3, 1}, {4, 3, 1}, {1, 1, 2}}
+	val := exercise.CountPoints(points, queries)
 	print(val)
 }
