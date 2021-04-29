@@ -38,7 +38,7 @@ type ParkingSystem struct {
 	small  int
 }
 
-func Constructor(big int, medium int, small int) ParkingSystem {
+func Constructor1(big int, medium int, small int) ParkingSystem {
 	return ParkingSystem{big: big, medium: medium, small: small}
 }
 
