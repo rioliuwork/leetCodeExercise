@@ -3,6 +3,11 @@ package main
 import "leetCodeExercise/exercise"
 
 func main() {
-	val := exercise.NumberOfSteps1(7)
+	points := [][]int{
+		{1, 1},
+		{3, 4},
+		{-1, 0},
+	}
+	val := exercise.MinTimeToVisitAllPoints(points)
 	print(val)
 }
