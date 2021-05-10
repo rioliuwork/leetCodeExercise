@@ -14,7 +14,7 @@ type Codec struct {
 	number int
 }
 
-func Constructor() Codec {
+func Constructor535() Codec {
 	return Codec{
 		m: make(map[string]string),
 	}
