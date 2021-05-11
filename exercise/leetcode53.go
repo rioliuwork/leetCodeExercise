@@ -33,7 +33,7 @@ package exercise
 1 <= nums.length <= 3 * 104
 -105 <= nums[i] <= 105
 */
-func maxSubArray(nums []int) int {
+func maxSubArray53(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
 	}
